@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert an array of objects into a single object</title>
+</head>
+<body>
+    <script>
+        var people = [
+            { name: "John", age: 30, city: "New York" },
+            { name: "Jane", age: 25, city: "Chicago" },
+            { name: "Jim", age: 22, city: "Phoenix" }
+        ];
+
+        var peopleObject = {};
+
+        for (var i = 0; i < people.length; i++) {
+            var person = people[i];
+            peopleObject[person.name] = person;
+        }
+
+        document.write(peopleObject["John"].name + " is " + peopleObject["John"].age + " years old and lives in " + peopleObject["John"].city + "<br>");
+        document.write(peopleObject["Jane"].name + " is " + peopleObject["Jane"].age + " years old and lives in " + peopleObject["Jane"].city + "<br>");
+        document.write(peopleObject["Jim"].name + " is " + peopleObject["Jim"].age + " years old and lives in " + peopleObject["Jim"].city);
+    </script>
+</body>
+</html>

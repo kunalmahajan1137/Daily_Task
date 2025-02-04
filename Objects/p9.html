@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an object representing a car with start() and stop() methods</title>
+</head>
+<body>
+    <script>
+        var car = {
+            make: "Toyota",
+            model: "Corolla",
+            year: 2020,
+            start: function() {
+                document.write("Engine started");
+            },
+            stop: function() {
+                document.write("Engine stopped");
+            }
+        };
+        car.start();
+        car.stop();
+    </script>
+</body>
+</html>
