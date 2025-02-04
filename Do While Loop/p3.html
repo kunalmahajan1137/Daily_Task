@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display a menu and keep asking for input until exit</title>
+</head>
+<body>
+    <script>
+        let choice;
+        do{
+            choice = prompt("Enter your choice: 1. Print Hello 2. Print Goodbye 3. Exit");
+            choice = parseInt(choice);
+            if(choice === 1){
+                document.write("Hello<br>");
+            }else if(choice === 2){
+                document.write("Goodbye<br>");
+            }
+        }while(choice !== 3);
+    </script>
+</body>
+</html>
