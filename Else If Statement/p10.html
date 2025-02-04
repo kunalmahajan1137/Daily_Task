@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if a character is a vowel, consonant, or not a letter.</title>
+</head>
+<body>
+    <script>
+        let character = prompt("Enter a character: ");
+        if (character == "a" || character == "e" || character == "i" || character == "o" || character == "u" || character == "A" || character == "E" || character == "I" || character == "O" || character == "U") {
+            console.log("The character is a vowel.");
+        } else if ((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')) {
+            console.log("The character is a consonant.");
+        } else {
+            console.log("The character is not a letter.");
+        }
+    </script>
+</body>
+</html>

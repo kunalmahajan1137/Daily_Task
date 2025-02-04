@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify the season based on month input </title>
+</head>
+<body>
+    <script>
+        let month = prompt("Enter the month: ");
+        if (month === "December" || month === "January" || month === "February") {
+            console.log("It is Winter.");
+        } else if (month === "March" || month === "April" || month === "May") {
+            console.log("It is Spring.");
+        } else if (month === "June" || month === "July" || month === "August") {
+            console.log("It is Summer.");
+        } else if (month === "September" || month === "October" || month === "November") {
+            console.log("It is Autumn.");
+        } else {
+            console.log("Invalid month.");
+        }
+    </script>
+</body>
+</html>

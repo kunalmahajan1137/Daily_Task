@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determine time of the day (morning, afternoon, evening, night)</title>
+</head>
+<body>
+    <script>
+        let time = prompt("Enter the time in 24-hour format (0-23): ");
+        if (time >= 0 && time < 12) {
+            console.log("Good morning!");
+        } else if (time >= 12 && time < 17) {
+            console.log("Good afternoon!");
+        } else if (time >= 17 && time < 21) {
+            console.log("Good evening!");
+        } else {
+            console.log("Good night!");
+        }
+    </script>
+</body>
+</html>

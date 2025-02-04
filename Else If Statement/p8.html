@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if a triangle is equilateral, isosceles, or scalene</title>
+</head>
+<body>
+    <script>
+        let side1 = prompt("Enter the length of side 1: ");
+        let side2 = prompt("Enter the length of side 2: ");
+        let side3 = prompt("Enter the length of side 3: ");
+
+        if (side1 == side2 && side2 == side3) {
+            console.log("The triangle is equilateral.");
+        } else if (side1 == side2 || side2 == side3 || side3 == side1) {
+            console.log("The triangle is isosceles.");
+        } else {
+            console.log("The triangle is scalene.");
+        }
+    </script>
+</body>
+</html>
