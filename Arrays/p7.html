@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the second largest element in an array.    </title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        var max = arr[0];
+        var secondMax = arr[0];
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                secondMax = max;
+                max = arr[i];
+            } else if (arr[i] > secondMax) {
+                secondMax = arr[i];
+            }
+        }
+        console.log(secondMax);
+    </script>
+</body>
+</html>
