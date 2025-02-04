@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if a year is a leap year.</title>
+</head>
+<body>
+    <script>
+        var year = parseInt(prompt("Enter a year: "));
+    
+        switch (true) {
+            case (year % 400 === 0):
+                console.log(year + " is a leap year");
+                break;
+            case (year % 100 === 0):
+                console.log(year + " is not a leap year");
+                break;
+            case (year % 4 === 0):
+                console.log(year + " is a leap year");
+                break;
+            default:
+                console.log(year + " is not a leap year");
+        }
+    </script>
+    
+</body>
+</html>

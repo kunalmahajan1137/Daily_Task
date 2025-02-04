@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print capital of a country using switch case.  </title>
+</head>
+<body>
+    <script>
+        var country = prompt("Enter a country: ").toLowerCase();
+
+        switch (country) {
+            case 'bangladesh':
+                console.log("The capital of Bangladesh is Dhaka");
+                break;
+            case 'india':
+                console.log("The capital of India is New Delhi");
+                break;
+            case 'pakistan':
+                console.log("The capital of Pakistan is Islamabad");
+                break;
+            case 'nepal':
+                console.log("The capital of Nepal is Kathmandu");
+                break;
+            case 'bhutan':
+                console.log("The capital of Bhutan is Thimphu");
+                break;
+            case 'srilanka':
+                console.log("The capital of Srilanka is Colombo");
+                break;
+            default:
+                console.log("The capital of " + country + " is unknown");
+        }
+    </script>
+</body>
+</html>

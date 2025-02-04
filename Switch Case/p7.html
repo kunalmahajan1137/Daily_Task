@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Identify type of character (digit, alphabet, special character). </title>
+</head>
+<body>
+    <script>
+        var character = prompt("Enter a character: ");
+    
+        switch (true) {
+            case (character >= '0' && character <= '9'):
+                console.log("The character is a digit");
+                break;
+            case ((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')):
+                console.log("The character is an alphabet");
+                break;
+            default:
+                console.log("The character is a special character");
+        }
+    </script>
+    
+</body>
+</html>
